@@ -157,13 +157,7 @@ var res = List.find((function (param) {
                 return RList$Rationale.nth(0, param);
               }));
         if (res !== undefined) {
-          var x = res;
-          if (x !== 19690720) {
-            console.log(x);
-            return false;
-          } else {
-            return true;
-          }
+          return res === 19690720;
         } else {
           return false;
         }

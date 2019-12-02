@@ -79,9 +79,6 @@ let res =
 
         switch (res) {
         | Some(19690720) => true
-        | Some(x) =>
-          Js.Console.log(x);
-          false;
         | _ => false
         };
       },
