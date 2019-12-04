@@ -51,7 +51,7 @@ let run = input => {
   let rec doRun = (env, pc) => {
     let result =
       Rationale.Option.Infix.(
-        (env->toOps->nth(pc, _) <$> parseLine <$> (x => eval(x, env)))
+        (env->toOps->nth(pc, _) <$> parseLine <$> eval(_, env))
         ->Rationale.Option.default(Error, _)
       );
 
